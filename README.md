@@ -89,3 +89,29 @@ These dependencies were not found:
 cnpm i -S axios
 cnpm i -S vue-axios
 ```
+
+
+---------
+
+```
+ERROR in ./~/_vue-loader@12.2.2@vue-loader/lib/template-compiler?{"id":"data-v-67c4defe","hasScoped":true,"transformToRequire":{"video":"src","source":"src","img":"src","image":"xlink:href"}}!./~/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=template&index=0!./src/components/NavList.vue
+(Emitted value instead of an instance of Error) 
+  Error compiling template:
+  
+      <div class="navList">
+        <ul>
+          <li v-for="item in navList">
+  	   <a href="List.html?cat_id={{ item.cat_id }}">
+  	      {{ item.cat_name }}
+  	   </a>
+  	</li>
+        </ul>
+      </div>
+  
+  - href="List.html?cat_id={{ item.cat_id }}": Interpolation inside attributes has been removed. Use v-bind or the colon shorthand instead. For example, instead of <div id="{{ val }}">, use <div :id="val">.
+
+ @ ./src/components/NavList.vue 10:2-340
+ @ ./src/router/index.js
+ @ ./src/main.js
+ @ multi ./build/dev-client ./src/main.js
+```
